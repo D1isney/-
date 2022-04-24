@@ -1,10 +1,13 @@
 package strategy;
 
-public interface Comparable {
+/**
+ *泛型替换Object
+ */
+public interface Comparable<T> {
 	/**
 	 * 自己定义的
 	 * 不要跟java.lang的混搅
 	 */
-	int compareTo(Object o);
+	int compareTo(T o);
 
 }
