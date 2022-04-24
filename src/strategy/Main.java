@@ -15,7 +15,7 @@ public class Main {
 		//定义一个排序器
 		//选择排序 也可以用冒泡排序
 //		Dog[] a = {new Dog(3),new Dog(5),new Dog(1)};
-		Sorter<Cat> sorter = new Sorter();
+		Sorter<Cat> sorter = new Sorter<>();
 		
 		/**
 		 * 策略模式
@@ -23,7 +23,15 @@ public class Main {
 		 * implements实现接口的策略通过接口传到sort上
 		 * 需要不同的排序就 添加一个类实现implements接口
 		 */
-		sorter.sort(a,new CatHeightComparator());
+//		sorter.sort(a,new CatHeightComparator());
+		
+		//拉姆达表达式
+		//函数式接口
+		sorter.sort(a,(o1,o2)->{
+			if(o1.weight < o2.weight) return -1;
+			else if(o1.weight > o2.weight) return 1;
+			else return 0;
+		});
 		System.out.println(Arrays.toString(a));
 		
 		
