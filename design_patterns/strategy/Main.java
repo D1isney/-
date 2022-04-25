@@ -33,6 +33,7 @@ public class Main {
 			else return 0;
 		});
 		System.out.println(Arrays.toString(a));
+		System.out.println();
 		
 		
 	}
