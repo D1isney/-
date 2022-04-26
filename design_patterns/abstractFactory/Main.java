@@ -4,12 +4,26 @@ package abstractFactory;
 public class Main {
 
 	public static void main(String[] args) {
-		Car c = new Car();
+		
+//		Car c = new Car();
+//		c.go();
+//		MagicStick w = new MagicStick();
+//		w.shoot();
+//		MushRoom b = new MushRoom();
+//		b.printName();
+		
+		/**
+		 * 产品族
+		 */
+		AbstractFactory f = new ModernFactory();
+		
+		Vehicle c = f.createVehicle();
 		c.go();
-		MagicStick w = new MagicStick();
+		
+		Weapon w = f.createWeapon();
 		w.shoot();
-		MushRoom b = new MushRoom();
-		b.pringtName();
+		
+		Food b = f.createFood();
+		b.printName();
 	}
-
 }

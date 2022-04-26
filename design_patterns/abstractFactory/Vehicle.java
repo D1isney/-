@@ -1,5 +1,5 @@
 package abstractFactory;
 
 public abstract class Vehicle {
-	void go() {}
+	abstract void go();
 }

@@ -1,7 +1,7 @@
 package abstractFactory;
 
 public class MushRoom extends Food {
-	public  void pringtName() {
+	 void printName() {
 		System.out.println("dmg");
 	}
 }

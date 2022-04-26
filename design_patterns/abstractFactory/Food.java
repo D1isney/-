@@ -1,6 +1,5 @@
 package abstractFactory;
 
 public abstract class Food {
-	void pringname() {
-	}
+	abstract void printName();
 }
