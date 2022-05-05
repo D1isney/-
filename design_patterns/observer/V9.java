@@ -6,9 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
-
-import javax.swing.WindowConstants;
 
 class TestFrame extends Frame{
 	public void launch() {
@@ -27,20 +24,20 @@ class TestFrame extends Frame{
 		this.setVisible(true);
 	}
 	
+	//相当于观察者
 	private class MyActionListener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			System.out.println("button pressed！");
 		}
 	}
+	//相当于观察者
 	private class MyActionListener2 implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			System.out.println("button pressed！2");
 		}
 	}
-	
-	
 }
 
 public class V9 {
