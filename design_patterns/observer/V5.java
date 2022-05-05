@@ -10,6 +10,8 @@ import java.util.List;
 
 class Child5{
 	private boolean cry = false;
+	
+	//使用链表把观察者的对象装起来
 	private List<Observer> observer = new ArrayList<>();
 	{
 		observer.add(new Dad5());
