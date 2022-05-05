@@ -59,6 +59,12 @@ class Dog7 implements Observer7{
 	}
 }
 
+/**
+ * 观察者只和事件打交道
+ * 不和事件源打交道
+ * 这样观察者和事件源解耦合了
+ */
+
 //事件类
 class wakeUpEvent7{
 	long timestamp7;
