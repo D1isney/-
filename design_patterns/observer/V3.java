@@ -3,8 +3,6 @@ package observer;
  *加入观察者
  */
 
-public class V3 {
-
 class Child3{
 	private boolean cry = false;
 	
@@ -16,16 +14,20 @@ class Child3{
 	
 	public void wakeUp3() {
 		cry = true;
-		d.feed();
+		d.feed3();
 	}
 }
-	
 class Dad3{
-	public void feed() {
+	public void feed3() {
 		System.out.println("dad feeding.....");
 	}
 }
-	public static void main(String[] args) {
 
+public class V3 {
+
+	public static void main(String[] args) {
+//		V3 v = new V3();
+		Child3 ch = new Child3();
+		ch.wakeUp3();
 	}
 }
