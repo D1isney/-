@@ -27,7 +27,7 @@ class Child6{
 }
 
 class Dad6 implements Observer6{
-	public void feed6() {System.out.println("dad feeding.....");}
+	public void feed6() {System.out.println("dad6 feeding.....");}
 
 	@Override
 	public void actionOnWakeUp6(wakeUpEvent6 event6) {
@@ -36,7 +36,7 @@ class Dad6 implements Observer6{
 }
 
 class Mum6 implements Observer6{
-	public void hug6() {System.out.println("Mum5 hugging.....");}
+	public void hug6() {System.out.println("Mum6 hugging.....");}
 
 	@Override
 	public void actionOnWakeUp6(wakeUpEvent6 event6) {
@@ -45,7 +45,7 @@ class Mum6 implements Observer6{
 }
 
 class Dog6 implements Observer6{
-	public void wang6() {System.out.println("Dog5 wang.....");}
+	public void wang6() {System.out.println("Dog6 wang.....");}
 
 	@Override
 	public void actionOnWakeUp6(wakeUpEvent6 event6) {
