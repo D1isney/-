@@ -1,11 +1,13 @@
 package observer;
 
 import java.awt.Button;
+import java.awt.Color;
 import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.time.Year;
 
 class TestFrame extends Frame{
 	public void launch() {
@@ -28,6 +30,7 @@ class TestFrame extends Frame{
 	private class MyActionListener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
+			((Button)e.getSource()).setLabel("press me again!");
 			System.out.println("button pressed！");
 		}
 	}

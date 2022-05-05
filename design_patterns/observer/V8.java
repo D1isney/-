@@ -18,6 +18,12 @@ class Child8{
 		observer.add(new Dad8());
 		observer.add(new Mum8());
 		observer.add(new Dog8());
+		
+		//hook callback function
+		//钩子函数 钩在上面线程进行就挂在上面也进行 
+		observer.add((e) -> {
+			System.out.println("呸呸呸");
+		});
 	}
 	public boolean isCry8() {return cry;}
 	
