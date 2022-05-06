@@ -1,5 +1,7 @@
 package observer;
 
+
+//观察者
 public class V1 {
 
 	/**
