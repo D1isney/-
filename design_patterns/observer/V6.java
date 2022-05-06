@@ -3,6 +3,7 @@ package observer;
 import java.util.ArrayList;
 import java.util.List;
 
+//观察者
 class Child6{
 	private boolean cry = false;
 	

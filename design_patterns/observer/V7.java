@@ -3,7 +3,7 @@ package observer;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/**观察者
  * 有很多时候，观察者需要根据事情的具体情况来进行处理
  * 大多数时候，我们处理事件的时候，需要事件源对象
  */

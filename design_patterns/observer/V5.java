@@ -1,10 +1,8 @@
 package observer;
-
 import java.util.ArrayList;
 import java.util.List;
 
-
-/**
+/**观察者
  *分离观察者与被观察者
  */
 

@@ -9,6 +9,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.time.Year;
 
+//观察者的实际应用
 class TestFrame extends Frame{
 	public void launch() {
 		Button b = new Button("Press me!");

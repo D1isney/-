@@ -1,5 +1,6 @@
 package observer;
-/**
+
+/**观察者
  *加入观察者
  */
 
