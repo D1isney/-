@@ -7,7 +7,6 @@ import java.util.Random;
  */
 
 class Tank5 implements Movable{
-	
 	@Override
 	public void move() {
 		System.out.println("Tank moving claclacla......");
@@ -47,7 +46,6 @@ class TankLogProxy5 implements Movable{
 		long end = System.currentTimeMillis();
 		System.out.println("stopped!");
 	}
-	
 }
 public class V5 {
 	public static void main(String[] args) {
