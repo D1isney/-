@@ -62,7 +62,6 @@ public class V6 {
 //		Tank6 tank6 = new Tank6();
 //		TankTimeProxy6 ttp6 = new TankTimeProxy6(tank6);
 //		TankLogProxy6 tlp6 = new TankLogProxy6(ttp6);
-//		tlp6.move();
 		
 		new TankTimeProxy6(
 				new TankLogProxy6(
