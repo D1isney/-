@@ -58,6 +58,12 @@ class Tank6 implements Movable{
 
 public class V6 {
 	public static void main(String[] args) {
+		
+//		Tank6 tank6 = new Tank6();
+//		TankTimeProxy6 ttp6 = new TankTimeProxy6(tank6);
+//		TankLogProxy6 tlp6 = new TankLogProxy6(ttp6);
+//		tlp6.move();
+		
 		new TankTimeProxy6(
 				new TankLogProxy6(
 						new Tank6()
