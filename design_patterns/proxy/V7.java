@@ -62,7 +62,7 @@ public class V7 {
 			 */
 		Movable m = (Movable)Proxy.newProxyInstance(Tank7.class.getClassLoader(), 
 				new Class[] {Movable.class},        //tank.class.getInterfaces()
-				new LogHander(tank7)
+				new LogHander7(tank7)
 					
 //				new InvocationHandler() {
 					//匿名类
@@ -84,11 +84,11 @@ public class V7 {
 
 
 //外部类实现
-class LogHander implements InvocationHandler{
+class LogHander7 implements InvocationHandler{
 	
 	Tank7 tank7;
 	
-	public LogHander(Tank7 tank7) {
+	public LogHander7(Tank7 tank7) {
 		this.tank7 = tank7;
 	}
 
