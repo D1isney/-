@@ -1,18 +1,14 @@
 package proxy;
 
-/*代理模式
- * 业务逻辑代码分离AOP
- */
-
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.Random;
 
-class TimeProxy8 implements InvocationHandler{
+class TimeProxy9 implements InvocationHandler{
 	Movable m;
 	
-	public TimeProxy8(Movable m) {this.m = m;}
+	public TimeProxy9(Movable m) {this.m = m;}
 	public void before() {
 		System.out.println("method start..");
 	}
@@ -30,17 +26,17 @@ class TimeProxy8 implements InvocationHandler{
 	}
 }
 
-class LogHander8 implements InvocationHandler {
+class LogHander9 implements InvocationHandler {
 	
-	Tank8 tank8;
+	Tank9 tank9;
 	
-	public LogHander8(Tank8 tank8) {
-		this.tank8 = tank8;
+	public LogHander9(Tank9 tank9) {
+		this.tank9 = tank9;
 	}
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		System.out.println("method " + method.getName() +" start..");
-		Object o = method.invoke(tank8, args);
+		Object o = method.invoke(tank9, args);
 		System.out.println("method " + method.getName() +" start..");
 		return o;
 	}
@@ -48,7 +44,8 @@ class LogHander8 implements InvocationHandler {
 } 
 
 
-class Tank8 implements Movable {
+class Tank9 implements Movable {
+	
 
 	@Override
 	public void move() {
@@ -62,14 +59,19 @@ class Tank8 implements Movable {
 
 }
 
-public class V8 {
+public class V9 {
 	public static void main(String[] args) {
-		Tank8 tank8 = new Tank8();
+		Tank9 tank9 = new Tank9();
+		
+		//代理产生器
+		//动态生成class
+//		System.getProperties().put("jdk.proxy.ProxyGenerator.saveGeneratedFiles", "true");
 		
 		Movable m = (Movable)Proxy.newProxyInstance(Tank8.class.getClassLoader(),
 				new Class[] {Movable.class}, 
-				new LogHander8(tank8)
+				new LogHander9(tank9)
 				);
 		m.move();
 	}
 }
+
