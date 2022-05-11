@@ -13,3 +13,10 @@ interface Collection2_ {
 	int size();
 	Iterator_ iterator();
 }
+
+interface Collection3_<E> {
+	void add(E o);
+	int size();
+	Iterator2_<E> iterator2();
+}
+

@@ -10,3 +10,9 @@ public interface Iterator_ {
 	
 	Object next();
 }
+
+interface Iterator2_<E> {
+	boolean hasNext();
+	
+	E next();
+}
