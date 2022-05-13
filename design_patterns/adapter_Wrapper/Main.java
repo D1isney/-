@@ -8,6 +8,10 @@ import java.io.InputStreamReader;
  * 例如电压：  220v         转接头         110v
  * 							  |
  * 						   用户使用
+ * 
+ * 常见的Adapter类反而不是Adapter
+ * WindowAdapter
+ * KeyAdapter
  */
 
 public class Main {
