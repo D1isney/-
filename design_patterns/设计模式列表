@@ -1,0 +1,14 @@
+					设计模式列表
+
+创建型模式 				 结构型模式  			行为型模式
+
+Abstract Factory		 Adapter				Chain of Responsibility
+Bulder					 Birdge					Command
+Factory Method			 Composite				Interpreter
+Prototype				 Decorator				Iterator
+Singleton				 Facade					Mediator
+			             FlyWeight				Memento
+			             Proxy					Obserber
+			             						State
+			             						Template Method
+			             						Visitor
