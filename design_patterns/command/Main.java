@@ -7,6 +7,7 @@ package command;
  * 
  *多次undo
  * 	Command与Cor模式
+ * 责任链
  *
  *transaction
  *	Command与？模式
