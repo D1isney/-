@@ -33,6 +33,7 @@ class Person3 implements Cloneable{
 
 class Location3 implements Cloneable{
 	//引用类型 String类型不需要进行克隆
+	//String类型无法克隆
 	//因为在常量池 本来就是公用的
 	String street;
 	int roomNo;
